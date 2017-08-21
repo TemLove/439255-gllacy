@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <input type="radio" id="promo-btn-1" name="toggle" checked>
-    <input type="radio" id="promo-btn-2" name="toggle">
-    <input type="radio" id="promo-btn-3" name="toggle">
+    <input class="visually-hidden" type="radio" id="promo-btn-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="promo-btn-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="promo-btn-3" name="toggle">
     <div class="page-wrapper">
       <header>
         <div class="container">
           <div class="header-logo">
             <a class="logo">
-              <img src="http://placehold.it/154x64" width="154" height="64" alt="Gllacy Shop">
+              <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
             </a>
           </div>
           <nav class="main-menu">
@@ -21,7 +22,7 @@
               <li>
                 <a href="#">Каталог</a>
                 <ul class="submenu">
-                  <li><a href="#">Новинки</a></li>
+                  <li class="submenu-new"><a href="#">Новинки</a></li>
                   <li><a href="catalog.html">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
                   <li><a href="#">Фруктовый лед</a></li>
@@ -79,7 +80,7 @@
         </div>
       </header>
       <main>
-        <h1 class="visually-hiden">Магазин мороженного Глейси</h1>
+        <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
         <div class="work-info">
           <div class="container">
             <p class="work-hours">с 10 до 20, ежедневно</p>
@@ -88,7 +89,7 @@
         </div>
         <section class="promo-slider">
           <div class="container">
-            <h2 class="visuall-hiden">Специальное предложение</h2>
+            <h2 class="visually-hidden">Специальное предложение</h2>
             <ul class="slider-controls">
               <li>
                 <label for="promo-btn-1">1</label>
@@ -122,7 +123,7 @@
             </ul>
             <ul class="banners">
               <li class="banner-item">
-                <h3>
+                <h3 class="title">
                   Малинка даром!
                 </h3>
                 <p>
@@ -131,7 +132,7 @@
                 <a class="button" href="#">Хочу варенье!</a>
               </li>
               <li class="banner-item">
-                <h3>
+                <h3 class="title">
                   Шоколадки даром!
                 </h3>
                 <p>
@@ -144,11 +145,11 @@
         </section>
         <section class="top-sellers">
           <div class="container">
-            <h2>Лидеры продаж</h2>
+            <h2 class="visually-hidden">Лидеры продаж</h2>
             <ul>
               <li class="product-item hit">
                 <div class="product-img">
-                  <img src="http://placehold.it/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  <img src="img/item-01.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <div class="product-price">310 &#8381; <span>/кг</span></div>
                 <a class="product-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -156,7 +157,7 @@
               </li>
               <li class="product-item hit">
                 <div class="product-img">
-                  <img src="http://placehold.it/267x267" alt="Сливочно-кофейное с кусочками шоколада">
+                  <img src="img/item-02.jpg" alt="Сливочно-кофейное с кусочками шоколада">
                 </div>
                 <div class="product-price">380 &#8381; <span>/кг</span></div>
                 <a class="product-title">Сливочно-кофейное с кусочками шоколада</a>
@@ -164,7 +165,7 @@
               </li>
               <li class="product-item hit">
                 <div class="product-img">
-                  <img src="http://placehold.it/267x267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                  <img src="img/item-03.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 </div>
                 <div class="product-price">355 &#8381; <span>/кг</span></div>
                 <a class="product-title">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -172,7 +173,7 @@
               </li>
               <li class="product-item hit">
                 <div class="product-img">
-                  <img src="http://placehold.it/267x267" alt="Сливочное крем-брюле с карамельной подливкой">
+                  <img src="img/item-04.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
                 </div>
                 <div class="product-price">415 &#8381; <span>/кг</span></div>
                 <a class="product-title">Сливочное крем-брюле с карамельной подливкой</a>
@@ -183,7 +184,7 @@
         </section>
         <section class="features">
           <div class="container">
-            <h2 class="visuall-hiden">Наши преимущества</h2>
+            <h2 class="visually-hidden">Наши преимущества</h2>
             <b>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b>
             <p class="feature feature-icon ice-icon">
               Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
@@ -202,14 +203,14 @@
         <section class="blog-info">
           <div class="container">
             <article class="blog-news">
-              <h2 class="visually-hiden">Наши публикации</h2>
+              <h2 class="visually-hidden">Наши публикации</h2>
               <p class="news-section-title">Новое в нашем блоге</p>
               <a href="#" class="blog-title">
                 <b>10 способов сервировки фруктовых щербетов к столу</b>
               </a>
             </article>
             <div class="subscription">
-              <h2 class="visually-hiden">Подписка</h2>
+              <h2 class="visually-hidden">Подписка</h2>
               <p>
                 Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
               </p>
@@ -224,9 +225,9 @@
           </div>
         </section>
         <section class="contacts">
-          <h2 class="visually-hiden">Контактная информация</h2>
+          <h2 class="visually-hidden">Контактная информация</h2>
           <a class="map" href="#">
-            <img src="http://placehold.it/1302x640" alt="Схема проезда">
+            <img src="img/map.jpg" alt="Схема проезда">
           </a>
           <div class="container">
             <div class="contacts-info">
@@ -264,7 +265,7 @@
           </div>
           <div class="footer-right credits">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img class="logo-html-academy" src="http://placehold.it/108x39" alt="HTML Academy logo"  width="108" height="39">
+              <img class="logo-html-academy" src="img/logo-htmlacademy.svg" alt="HTML Academy logo"  width="108" height="39">
             </a>
             <p>
               Сделано в 

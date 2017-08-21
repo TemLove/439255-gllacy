@@ -1,0 +1,48 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.page-wrapper {
+  background-color: #849d8f;
+}
+
+#promo-btn-2:checked ~ .page-wrapper { 
+  background-color: #8996a6;
+}
+
+#promo-btn-3:checked ~ .page-wrapper { 
+  background-color: #9d8b84;
+}
+
+.page-menu {
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.promo-title {
+  font-size: 60px;
+  line-height: 60.35px;
+}
+
+.title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
