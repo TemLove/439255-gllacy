@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -42,8 +43,8 @@
               <li>
                 <label class="search-icon" for="search">Поиск</label>
                 <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-                  <input type="search" id="search">
                   <div class="label-box">
+                    <input type="search" id="search">
                     <label for="search">Что ищем?</label>
                   </div>
                 </form>
@@ -51,17 +52,13 @@
               <li>
                 <a class="login-link login-icon" href="#">Вход</a>
                 <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
-                  <div>
+                  <div class="label-box">
                     <input type="email" name="email" id="login-email">
-                    <div class="label-box">
-                      <label for="login-email">Электронная почта</label>
-                    </div>
+                    <label for="login-email">Электронная почта</label>
                   </div>
-                  <div>
+                  <div class="label-box">
                     <input type="password" name="password" id="password">
-                    <div class="label-box">
-                      <label for="password">Пароль</label>
-                    </div>
+                    <label for="password">Пароль</label>
                   </div>
                   <div>
                     <button class="button" type="submit">Войти</button>
@@ -77,16 +74,14 @@
               </li>
             </ul>
           </div>
+          <div class="work-info">
+              <p class="work-hours">с 10 до 20, ежедневно</p>
+              <p class="phone">8 812 450-25-25</p>
+          </div>
         </div>
       </header>
       <main>
         <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
-        <div class="work-info">
-          <div class="container">
-            <p class="work-hours">с 10 до 20, ежедневно</p>
-            <p class="phone">8 812 450-25-25</p>
-          </div>
-        </div>
         <section class="promo-slider">
           <div class="container">
             <h2 class="visually-hidden">Специальное предложение</h2>
@@ -121,7 +116,12 @@
                 <a class="button" href="#">Давайте оба!</a>             
               </li>                
             </ul>
-            <ul class="banners">
+          </div>
+        </section>
+        <section class="banners">
+          <div class="container">
+            <h2 class="visually-hidden">Акции</h2>
+            <ul class="banners-list">
               <li class="banner-item">
                 <h3 class="title">
                   Малинка даром!
@@ -153,7 +153,9 @@
                 </div>
                 <div class="product-price">310 &#8381; <span>/кг</span></div>
                 <a class="product-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                <a href="#" class="button">Быстрый просмотр</a>
+                <div class="product-info">
+                  <button class="button" href="#">Быстрый просмотр</button> 
+                </div>
               </li>
               <li class="product-item hit">
                 <div class="product-img">
@@ -161,7 +163,9 @@
                 </div>
                 <div class="product-price">380 &#8381; <span>/кг</span></div>
                 <a class="product-title">Сливочно-кофейное с кусочками шоколада</a>
-                <a href="#" class="button">Быстрый просмотр</a>
+                <div class="product-info">
+                  <button class="button" href="#">Быстрый просмотр</button> 
+                </div>
               </li>
               <li class="product-item hit">
                 <div class="product-img">
@@ -169,7 +173,9 @@
                 </div>
                 <div class="product-price">355 &#8381; <span>/кг</span></div>
                 <a class="product-title">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                <a href="#" class="button">Быстрый просмотр</a>
+                <div class="product-info">
+                  <button class="button" href="#">Быстрый просмотр</button> 
+                </div>
               </li>
               <li class="product-item hit">
                 <div class="product-img">
@@ -177,7 +183,9 @@
                 </div>
                 <div class="product-price">415 &#8381; <span>/кг</span></div>
                 <a class="product-title">Сливочное крем-брюле с карамельной подливкой</a>
-                <a href="#" class="button">Быстрый просмотр</a>
+                <div class="product-info">
+                  <button class="button" href="#">Быстрый просмотр</button> 
+                </div>
               </li>
             </ul>
           </div>
@@ -186,18 +194,20 @@
           <div class="container">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <b>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b>
-            <p class="feature feature-icon ice-icon">
-              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-            </p>
-            <p class="feature feature-icon leaf-icon">
-              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-            </p>
-            <p class="feature feature-icon cow-icon">
-              Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-            </p>
-            <p class="feature feature-icon therm-icon">
-              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-            </p>
+            <ul class="features-list">
+              <li class="feature feature-icon ice-icon">
+                Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+              </li>
+              <li class="feature feature-icon leaf-icon">
+                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+              </li>
+              <li class="feature feature-icon cow-icon">
+                Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+              </li>
+              <li class="feature feature-icon therm-icon">
+                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+              </li>
+            </ul>
           </div>
         </section>
         <section class="blog-info">
@@ -215,8 +225,8 @@
                 Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
               </p>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="email" id="subscription-email">
                 <div class="label-box">
+                  <input type="email" id="subscription-email">
                   <label for="subscription-email">Электронная почта</label>
                 </div>
                 <button type="submit" class="button">Отправить</button>
@@ -281,25 +291,25 @@
       <h2 class="modal-title">Мы обязательно вам ответим!</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="form-field">
-          <input type="text" name="name" id="name">
           <div class="label-box">
+            <input type="text" name="name" id="name">
             <label for="name">Как вас зовут?</label>
           </div>
         </div>
         <div class="form-field">
-          <input type="email" name="email" id="contacts-email">
           <div class="label-box">
+            <input type="email" name="email" id="contacts-email">
             <label for="contacts-email">Ваша почта для ответа?</label>
           </div>
         </div>
         <div class="form-field">
-          <textarea name="mail-content" id="mail-content" rows="5"></textarea>
           <div class="label-box">
+            <textarea name="mail-content" id="mail-content" rows="5"></textarea>
             <label>Напишите что-нибудь...</label>
           </div>
         </div>
         <button type="submit">Отправить</button>
-        <span class="modal-close">x</span>
+        <span class="modal-close">Закрыть</span>
       </form>
     </section>
   </body>
